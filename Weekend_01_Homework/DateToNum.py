@@ -35,7 +35,7 @@ def DateToNumber(date):
   elif len(numberOfDays) == 1:
     print(currentYear + '00' + numberOfDays)
   else:
-    print(currentYear + numberOfDays)#
+    print(currentYear + numberOfDays)
     
 
 #############################################################################
