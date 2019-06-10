@@ -11,4 +11,4 @@ def allAnagrams (string1):
 
     searchFile.close()
 
-allAnagrams("bad")
+allAnagrams("Listen")
