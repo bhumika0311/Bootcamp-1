@@ -4,11 +4,8 @@ def isAnagram(string1, string2):
   return string1 == string2
 
 def allAnagrams (string1):
-    searchFile = open("words.txt", "r")
-    for line in searchFile:
+    for line in open("words.txt", "r"):
         if isAnagram(string1, line[:len(string1)]) and len(line) == len(string1) + 1:
             print(line[:len(string1)])
-
-    searchFile.close()
 
 allAnagrams("Listen")
