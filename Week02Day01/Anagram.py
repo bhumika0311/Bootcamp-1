@@ -19,8 +19,7 @@ def isAnagram (string1, string2):
         m += 1
 
       return mapping1 == mapping2
-  
-    else:
-      return False
+    
+    return False
 
-print(isAnagram('Abc', 'cba'))
+print(isAnagram('Abc', 'Bcd'))
