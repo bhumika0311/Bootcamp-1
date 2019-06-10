@@ -11,16 +11,13 @@ def isSameLength(string1, string2):
 def isAnagram (string1, string2):
     if isSameLength(string1, string2):
       n = 0
-      string1 = string1.upper()
-      string2 = string2.upper()
-
       while n < len(string1):
-        mapping1[string1[n]] += 1
+        mapping1[string1.upper()[n]] += 1
         n += 1
 
       m = 0
       while m < len(string2):
-        mapping2[string2[m]] += 1
+        mapping2[string2.upper()[m]] += 1
         m += 1
 
       return mapping1 == mapping2
@@ -28,4 +25,4 @@ def isAnagram (string1, string2):
     else:
       return False
 
-print(isAnagram('Silent', 'nonejl'))
+print(isAnagram('Abc', 'cba'))
