@@ -12,10 +12,7 @@ using namespace std;
 	}
 
 	int main(){
-		System.out.println(isAmbiguous("12/11/2018"));
-		System.out.println(isAmbiguous("11/02/2018"));
-		System.out.println(isAmbiguous("30/11/2018"));
-		System.out.println(isAmbiguous("11/31/2018"));
+		cout << isAmbiguous("12/11/2018");
 	}
 
 }
