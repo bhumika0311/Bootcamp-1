@@ -1,4 +1,4 @@
-monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+monthNames = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 
 numberOfDaysInEveryMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
@@ -13,7 +13,7 @@ def isLeapYear(year):
 #########################################################################
 
 def DateToNumber(date):
-  date = (date.replace(' ', ',').split(','))
+  date = (date.upper.replace(',', ' ').split())
   numberOfDays = 0
   currentMonth = dict(zip(monthNames, monthNumber))[date[1]]
 
@@ -36,5 +36,5 @@ def DateToNumber(date):
 
 #############################################################################
 
-DateToNumber("7 Mar,2020")
+DateToNumber("7 Mar, 2020")
 
