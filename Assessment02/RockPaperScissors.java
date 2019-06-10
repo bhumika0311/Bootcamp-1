@@ -29,7 +29,7 @@
 				draw++;
 		}
 		
-		ans += "+" + winner1 + ", -" + winner2 + ", " + draw;
+		ans += "+" + winner1 + ", -" + winner2 + ", =" + draw;
 		
 		return ans;
 	}
