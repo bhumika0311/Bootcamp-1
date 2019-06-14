@@ -13,16 +13,16 @@ def Terminus (latticePoint, listOfStrings):
     print(pathsUpDown.get(listOfStrings[0][-1]))
     while i < len(listOfStrings):
         while j < (int)(listOfStrings[i][0: -1]):
-            if [listOfStrings[i][-1]] in DirectionsLeftRight:
+            if listOfStringsl[i][-1] in DirectionsLeftRight:
                 x += pathsLeftRight.get(listOfStrings[i][-1])
                 
-            elif [listOfStrings[i][-1]] in DirectionsUpDown:
+            elif listOfStrings[i][-1] in DirectionsUpDown:
                 y += pathsUpDown.get(listOfStrings[i][-1])
                 
-            elif [listOfStrings[i][-2]] in DirectionsLeftRight:
+            elif listOfStrings[i][-2] in DirectionsLeftRight:
                 x += pathsLeftRight.get(listOfStrings[i][-2])
                 
-            elif [listOfStrings[i][-2]] in DirectionsUpDown:
+            elif listOfStrings[i][-2] in DirectionsUpDown:
                 y += pathsUpDown.get(listOfStrings[i][-2])
 
             j += 1
