@@ -9,14 +9,16 @@ def Terminus (latticePoint, listOfStrings):
     x = latticePoint[0]
     y = latticePoint[1]
     while i < len(listOfStrings):
-        if [listOfStrings[i][-1]] in DirectionsUpDown:
-            x += pathsUpDown[listOfStrings[i][-1]]
-            y += pathsUpDown[listOfStrings[i][-1]]
-        else:
+        if [listOfStrings[i][-1]] in DirectionsLeftRight:
             x += pathsLeftRight[listOfStrings[i][-1]]
-            y += pathsLeftRight[listOfStrings[i][-1]]
+        elif [listOfStrings[i][-1]] in DirectionsUpDown:
+            y += pathsUpDown[listOfStrings[i][-1]]
+        elif [listOfStrings[i][-1]] in DirectionsLeftRight:
+            x += pathsLeftRight[listOfStrings[i][-1]]
+        elif [listOfStrings[i][-2]] in DirectionsUpDown:
+            y += pathsUpDown[listOfStrings[i][-1]]
             
         i += 1
-    finalPoint = "(" + x + "," + y + ")"
+    return (x, y)
     
 print(Terminus((1, 1), ["1N", "3NW"]))
