@@ -3,7 +3,7 @@ class isPangram {
 	public static Boolean isPangram(String s) {
 		char alphabets = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
 				'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-		char frequency = new int[26];
+		int[] frequency = new int[26];
 		for (int i = 0; i < 26; i++) {
 			for (int j = 0; j < s.length(); j++) {
 				if (alphabets[i] == s.charAt(j)) {
