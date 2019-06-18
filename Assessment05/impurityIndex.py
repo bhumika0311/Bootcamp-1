@@ -3,11 +3,10 @@ frequency = [0, 0, 0, 0, 0, 0, 0, 0 ,0 ,0, 0, 0, 0, 0, 0 ,0 , 0 , 0 , 0 ,0 , 0, 
 vowels = ['A', 'E', 'I', 'O', 'U']
 consonants = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z']
 def impurityIndexCalc (Sentence):
-    impurityIndex = 0.0
     Sentence = Sentence.upper()
     for x in Sentence:
         i = 0
-        while i < 27:
+        while i < 26:
             if alphabets[i] == x:
                 frequency[i] += 1
                     
@@ -16,24 +15,23 @@ def impurityIndexCalc (Sentence):
 
     print(frequency)
         
-
     
-    for x in Sentence:
-        i = 0
-        while i < 27:
-            if alphabets[i] in vowels and frequency[i] == 2:
-                impurityIndex += 0.5
+    impurityIndex = 0.0
+    i = 0
+    while i < 26:
+        if alphabets[i] in vowels and frequency[i] == 2:
+            impurityIndex += 0.5
 
-            if alphabets[i] in consonants and frequency[i] == 2:
-                impurityIndex += 0.7
+        if alphabets[i] in consonants and frequency[i] == 2:
+            impurityIndex += 0.7
 
-            if frequency[i] > 2:
-                impurityIndex += 1.0
+        if frequency[i] > 2:
+            impurityIndex += 1.0
 
-            if frequency[i] > 3:
-                impurityIndex += 3.0
+        if frequency[i] > 3:
+            impurityIndex += 3.0
 
-            i += 1
+        i += 1
 
     return impurityIndex
 
