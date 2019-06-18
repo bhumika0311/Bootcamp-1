@@ -1,5 +1,5 @@
-alphabets = [' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-frequency = [0, 0, 0, 0, 0, 0, 0, 0, 0 ,0 ,0, 0, 0, 0, 0, 0 ,0 , 0 , 0 , 0 ,0 , 0, 0, 0, 0 ,0, 0]
+alphabets = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+frequency = [0, 0, 0, 0, 0, 0, 0, 0 ,0 ,0, 0, 0, 0, 0, 0 ,0 , 0 , 0 , 0 ,0 , 0, 0, 0, 0 ,0, 0]
 vowels = ['A', 'E', 'I', 'O', 'U']
 consonants = ['B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Y', 'Z']
 def impurityIndexCalc (Sentence):
@@ -37,6 +37,6 @@ def impurityIndexCalc (Sentence):
 
     return impurityIndex
 
-print(impurityIndexCalc("The quick brown x jumps over the lazy dog"))
+print(impurityIndexCalc("The quick brown fox jumps over the lazy dog"))
     
     
